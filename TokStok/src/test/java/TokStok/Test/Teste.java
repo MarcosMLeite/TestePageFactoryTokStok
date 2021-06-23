@@ -40,8 +40,8 @@ public class Teste extends Metodos {
 		Scroll();
 		Thread.sleep(4000);
 		elementos.btnComprar.click();
-
-		Thread.sleep(10000);
+		
+		wait.until(ExpectedConditions.visibilityOf(elementos.btnCarrinho));
 		elementos.btnCarrinho.click();
 
 	}
